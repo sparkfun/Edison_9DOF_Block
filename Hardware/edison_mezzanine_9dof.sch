@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -20247,6 +20247,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="SJ16" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
 <part name="SJ17" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NO" device="YES_SILK"/>
+<part name="FID3" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FID4" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -20268,8 +20270,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 Normally Open</text>
 <text x="228.6" y="182.88" size="2.032" layer="97" align="top-center">Comms Jumpers
 Default I2C</text>
-<text x="170.18" y="10.16" size="3.81" layer="94" align="center-left">Shawn Hymel</text>
-<text x="238.76" y="7.62" size="2.54" layer="94">v01</text>
 <wire x1="68.58" y1="83.82" x2="68.58" y2="185.42" width="0.1524" layer="97" style="longdash"/>
 <text x="33.02" y="182.88" size="2.032" layer="97" align="top-center">Power</text>
 <wire x1="73.66" y1="22.86" x2="73.66" y2="83.82" width="0.1524" layer="97" style="longdash"/>
@@ -20304,6 +20304,8 @@ Default I2C</text>
 <wire x1="68.58" y1="22.86" x2="68.58" y2="38.1" width="0.2032" layer="97"/>
 <text x="45.72" y="25.4" size="2.54" layer="97" align="center">1</text>
 <text x="60.96" y="25.4" size="2.54" layer="97" align="center">0x6B</text>
+<text x="238.76" y="7.62" size="2.54" layer="94">v10</text>
+<text x="167.64" y="10.16" size="2.54" layer="94">Shawn Hymel</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -20390,6 +20392,8 @@ Default I2C</text>
 <instance part="SJ17" gate="G$1" x="30.48" y="25.4" smashed="yes" rot="R90">
 <attribute name="NAME" x="27.94" y="22.86" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="FID3" gate="G$1" x="246.38" y="30.48"/>
+<instance part="FID4" gate="G$1" x="241.3" y="30.48"/>
 </instances>
 <busses>
 </busses>
