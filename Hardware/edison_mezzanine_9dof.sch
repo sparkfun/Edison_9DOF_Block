@@ -20202,7 +20202,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SJ2" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NC_BY_PASTE" device=""/>
 <part name="SJ1" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-NC_BY_PASTE" device=""/>
-<part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".3_INCH"/>
 <part name="U4" library="SparkFun-PowerIC" deviceset="MIC5205" device="3.3V"/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="1.0UF-16V-10%(0603)" device="" value="1.0uF"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="0.1UF-25V(+80/-20%)(0603)" device="" value="0.1uF"/>
@@ -20213,6 +20212,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="SJ15" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_PASTE" device=""/>
 <part name="SJ16" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_PASTE" device=""/>
 <part name="SJ17" library="SparkFun-Passives" deviceset="JUMPER-PAD-2-NC_BY_PASTE" device=""/>
+<part name="LOGO1" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_FLAME" device=".2_INCH"/>
 </parts>
 <sheets>
 <sheet>
@@ -20271,7 +20271,7 @@ Default I2C</text>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="0"/>
-<instance part="LOGO2" gate="G$1" x="73.66" y="12.7"/>
+<instance part="LOGO2" gate="G$1" x="236.22" y="45.72"/>
 <instance part="LOGO3" gate="G$1" x="88.9" y="2.54"/>
 <instance part="U1" gate="G$1" x="111.76" y="119.38"/>
 <instance part="C5" gate="G$1" x="93.98" y="121.92" rot="R180"/>
@@ -20329,7 +20329,6 @@ Default I2C</text>
 <instance part="SJ1" gate="G$1" x="114.3" y="58.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="114.681" y="55.88" size="1.778" layer="95" rot="R270"/>
 </instance>
-<instance part="LOGO1" gate="G$1" x="50.8" y="5.08"/>
 <instance part="U4" gate="G$1" x="38.1" y="134.62"/>
 <instance part="C1" gate="G$1" x="17.78" y="132.08" smashed="yes">
 <attribute name="NAME" x="16.764" y="135.001" size="1.778" layer="95" align="bottom-right"/>
@@ -20351,6 +20350,7 @@ Default I2C</text>
 <instance part="SJ17" gate="G$1" x="33.02" y="27.94" smashed="yes" rot="R90">
 <attribute name="NAME" x="30.48" y="25.4" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="LOGO1" gate="G$1" x="71.12" y="5.08"/>
 </instances>
 <busses>
 </busses>
