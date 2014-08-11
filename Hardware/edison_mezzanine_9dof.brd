@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -2143,7 +2143,7 @@ design rules under a new name.</description>
 <element name="SJ9" library="SparkFun-Passives" package="PAD-JUMPER-3-2OF3_NC_BY_PASTE_YES_SILK_FULL_BOX" value="JUMPER-PAD-3-2OF3_NC_BY_PASTE" x="2.54" y="25.4" rot="R90"/>
 <element name="SJ2" library="SparkFun-Passives" package="PAD-JUMPER-3-NC_BY_PASTE_YES_SILK_FULL_BOX" value="JUMPER-PAD-3-NC_BY_PASTE" x="9.525" y="2.54" rot="R90"/>
 <element name="SJ1" library="SparkFun-Passives" package="PAD-JUMPER-3-NC_BY_PASTE_YES_SILK_FULL_BOX" value="JUMPER-PAD-3-NC_BY_PASTE" x="5.715" y="2.54" rot="R90"/>
-<element name="U4" library="SparkFun-PowerIC" package="SOT23-5" value="" x="9.525" y="21.59">
+<element name="U4" library="SparkFun-PowerIC" package="SOT23-5" value="MIC52053.3V" x="9.525" y="21.59">
 <attribute name="PROD_ID" value="VREG-00822" x="9.525" y="21.59" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 </element>
 <element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="1.0uF" x="6.35" y="20.32" rot="R90">
@@ -2264,7 +2264,6 @@ design rules under a new name.</description>
 <contactref element="U3" pad="4"/>
 <contactref element="U4" pad="3"/>
 <contactref element="C1" pad="1"/>
-<contactref element="U4" pad="1"/>
 <via x="22.08" y="22.58" extent="1-16" drill="0.3302"/>
 <via x="7.62" y="21.336" extent="1-16" drill="0.3302"/>
 <via x="7.62" y="20.32" extent="1-16" drill="0.3302"/>
@@ -2277,7 +2276,6 @@ design rules under a new name.</description>
 <wire x1="6.35" y1="19.47" x2="7.278" y2="19.47" width="0.381" layer="1"/>
 <wire x1="6.35" y1="18.796" x2="6.35" y2="19.47" width="0.254" layer="1"/>
 <wire x1="7.874" y1="18.288" x2="9.398" y2="18.288" width="0.254" layer="1"/>
-<wire x1="8.575" y1="20.2899" x2="8.575" y2="19.497" width="0.254" layer="1"/>
 <wire x1="8.575" y1="19.497" x2="7.62" y2="18.542" width="0.254" layer="1"/>
 <wire x1="22.08" y1="22.58" x2="14.706" y2="22.58" width="0.381" layer="16"/>
 <wire x1="14.706" y1="22.58" x2="12.446" y2="20.32" width="0.381" layer="16"/>
@@ -2297,6 +2295,8 @@ design rules under a new name.</description>
 <wire x1="22.0802" y1="22.5798" x2="22.08" y2="22.58" width="0.2" layer="1"/>
 <wire x1="23.32" y1="22.1798" x2="22.4802" y2="22.1798" width="0.2" layer="1"/>
 <wire x1="22.4802" y1="22.1798" x2="22.08" y2="22.58" width="0.2" layer="1"/>
+<contactref element="U4" pad="1"/>
+<wire x1="8.575" y1="20.2899" x2="8.575" y2="19.497" width="0.254" layer="1"/>
 </signal>
 <signal name="3.3V">
 <wire x1="23.32" y1="21.78" x2="23.32" y2="21.7798" width="0.1524" layer="16"/>
