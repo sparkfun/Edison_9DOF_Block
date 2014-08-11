@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -20757,20 +20757,6 @@ Default I2C</text>
 <label x="170.18" y="109.22" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="GP44" class="0">
-<segment>
-<pinref part="SJ6" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="116.84" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
-<label x="170.18" y="116.84" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="GP45" class="0">
-<segment>
-<pinref part="SJ7" gate="G$1" pin="2"/>
-<wire x1="167.64" y1="124.46" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
-<label x="170.18" y="124.46" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="GP48" class="0">
 <segment>
 <pinref part="SJ13" gate="G$1" pin="2"/>
@@ -20864,6 +20850,18 @@ Default I2C</text>
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="66.04" x2="129.54" y2="66.04" width="0.1524" layer="91"/>
 <label x="129.54" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GP114_SPI_2_RXD" class="0">
+<segment>
+<pinref part="SJ7" gate="G$1" pin="2"/>
+<wire x1="167.64" y1="124.46" x2="170.18" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="124.46" x2="170.18" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="SJ6" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="116.84" x2="167.64" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="124.46" x2="172.72" y2="124.46" width="0.1524" layer="91"/>
+<junction x="170.18" y="124.46"/>
+<label x="172.72" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
